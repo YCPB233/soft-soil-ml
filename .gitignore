@@ -1,0 +1,33 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Local environment and secrets
+.env
+*.env
+configs/database.yaml
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Local outputs and large generated artifacts
+outputs/
+data/raw/
+data/interim/
+data/processed/
+data/external/
+src/ml/saved_models/*.pkl
+src/ml/saved_models/*.pt
+src/ml/saved_models/*.pth
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
