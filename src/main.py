@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from src.routers import health, machines, predict, projects
+from src.routers import db_test, health, machines, predict, projects
 
 tags_metadata = [
     {
@@ -45,6 +45,7 @@ app.add_middleware(
 )
 
 app.include_router(health.router)
+app.include_router(db_test.router)
 app.include_router(projects.router)
 app.include_router(machines.router)
 app.include_router(predict.router)
